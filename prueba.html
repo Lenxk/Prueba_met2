@@ -1,9 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Página de Registro</title>
+    <style>
+      /* Ajustes menores: estilo más consistente para el botón */
+      #btnRegistro {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      #btnRegistro:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- Botón de registro: Se agregó title para accesibilidad -->
+    <button id="btnRegistro" title="Haz clic para registrarte">
+      Registrarse
+    </button>
+
+    <script>
+      // Evento click: muestra mensaje en consola
+      document
+        .getElementById("btnRegistro")
+        .addEventListener("click", function () {
+          console.log("Botón de registro presionado");
+        });
+    </script>
+  </body>
 </html>
